@@ -1,0 +1,186 @@
+#page-index-point {
+    width: 100%;
+    max-width: var(--container-max-width); /* ver isso */
+    margin: 0 auto;
+}
+
+#page-index-point .container {
+    max-width: 100%;
+    margin: 0 auto;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+#page-index-point .container main {
+    min-width: 100%;
+    margin: 0px auto 80px auto;
+    padding: 32px 32px 64px 32px;
+    background: #FFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+#page-index-point .container main h1 {
+    font-size: 36px;
+}
+
+#page-index-point .field-group {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+}
+
+#page-index-point .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+#page-index-point .field select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    flex: 1;
+    background: #F0F0F5;
+    border-radius: 8px;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    color: #6C6C80;
+}
+
+#page-index-point .field label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+#page-index-point .field :disabled {
+    cursor: not-allowed;
+}
+
+#page-index-point .field-group .field + .field {
+    margin-left: 24px;
+}
+
+#page-index-point button {
+    width: 100px;
+    height: 50px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    align-self: center;
+    margin-left: 24px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+#page-index-point button:hover {
+    background: #2FB86E;
+}
+
+.not-found {
+    margin-top: 64px;
+}
+
+.points-grid {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    list-style: none;
+}
+
+.points-grid li {
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(225, 225, 226);
+    width: 100%;
+    max-width: 950px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.points-grid li img {
+    width: 100%;
+    max-height: 200px;
+    max-width: 350px;
+    border-radius: 8px;
+    border: 1px solid rgb(225, 225, 226);
+    margin-bottom: 20px;
+}
+
+.points-grid li h3 {
+    color: var(--primary-color);
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+@media(max-width: 1100px) {
+    .points-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+}
+
+@media(max-width: 900px) {
+    .points-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    #page-index-point .field-group .field + .field {
+        margin-left: 16px;
+    }
+    
+    #page-index-point button {
+        margin-left: 16px;
+    }
+}
+
+@media(max-width: 715px) {
+    .points-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    #page-index-point .field-group .field + .field {
+        margin-left: 8px;
+    }
+    
+    #page-index-point button {
+        margin-left: 8px;
+    }
+}
+
+@media(max-width: 611px) {
+    #page-index-point .field-group {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .points-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px;
+    }
+
+    .points-grid li {
+        max-width: 350px;
+    }
+}
+
+@media(max-width: 380px) {
+    #page-index-point .container main h1 {
+        font-size: 28px;
+    }
+}
