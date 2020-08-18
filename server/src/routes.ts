@@ -10,6 +10,10 @@ const pointsController = new PointsController();
 const itemsController = new ItemsController();
 
 
+routes.get('/teste', () => {
+    return 'teste';
+});
+
 routes.get('/items', itemsController.index);
 
 routes.post(
