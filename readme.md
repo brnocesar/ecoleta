@@ -21,36 +21,15 @@ Nesta edição a aplicação é um marketplace para conectar locais especializad
 
 ### :desktop_computer: _Web_
 
-A maior parte das funcionalidades está disponível na versão _web_, nela é possível:
+> https://brnocesar-ecoleta.vercel.app/
 
-<details>
-  <summary>:pencil: Cadastrar um Ponto de coleta (<strong>Clique</strong> para revelar a página)</summary>
-  <p>
-    <img src="./imagens/ecoleta-web-2-cadastro.png" alt="Página para cadastro de Pontos de coleta">
-  </p>
-</details>
-
-<details>
-  <summary>:notebook: Acessar a lista de todos os Pontos de coletas cadastrados e filtrá-los por Estado e Cidade (<strong>Clique</strong> para revelar a página)</summary>
-  <p>
-    <img src="./imagens/ecoleta-web-3-pontos.png" alt="Página para listagem de Pontos de coleta">
-  </p>
-</details>
-
-<details>
-  <summary>:bookmark_tabs: Acessar a página de detalhes de um Ponto de coleta (<strong>Clique</strong> para revelar a página)</summary>
-  <p>
-    <img src="./imagens/ecoleta-web-4-ponto.png" alt="Página de detalhes de um Pontos de coleta">
-  </p>
-</details>
+A maior parte das funcionalidades está disponível na versão _web_:
+- cadastrar um Ponto de coleta
+- acessar a lista de todos os Pontos de coletas cadastrados e filtrá-los por Estado e Cidade
+- acessar a página de detalhes de um Ponto de coleta
 
 ### :iphone: _Mobile_
 A versão _mobile_ permite buscar Pontos de coleta de acordo com a posição geográfica do usuário. Abaixo são apresentadas as telas da aplicação:
 
-<details>
-  <summary><strong>Clique aqui</strong> para ver as telas da versão <i>mobile</i></summary>
-  <p>
-    <img src="./imagens/ecoleta-mobile.png" alt="Telas da versão mobile">
-  </p>
-</details>
+<p><img src="./imagens/ecoleta-mobile.png" alt="Telas da versão mobile"></p>
 
