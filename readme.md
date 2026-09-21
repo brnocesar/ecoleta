@@ -33,3 +33,42 @@ A versão _mobile_ permite buscar Pontos de coleta de acordo com a posição geo
 
 <p><img src="./imagens/ecoleta-mobile.png" alt="Telas da versão mobile"></p>
 
+### Organização do projeto
+
+```text
+server/
+  src/
+    controllers/   regras para itens e pontos de coleta
+    database/      conexão SQLite, migrations e seeds
+    config/        configurações de upload e ambiente
+    validation/    validação dos dados dos pontos
+    routes.ts      rotas da API
+    server.ts      inicialização do servidor Express
+  uploads/         imagens dos itens e pontos de coleta
+
+web/
+  src/
+    pages/
+      Home/         página inicial
+      PointCreate/  cadastro de ponto de coleta
+      PointIndex/   listagem e filtros por estado e cidade
+      PointShow/    detalhes de um ponto
+      MobileScreens/ telas demonstrativas do aplicativo
+    components/    componentes reutilizáveis da interface
+    services/      cliente Axios para comunicação com a API
+    routes.tsx     rotas da aplicação web
+
+mobile/
+  src/
+    pages/
+      Home/         tela inicial
+      Points/       seleção de resíduos
+      PointIndex/   listagem de pontos
+      Detail/       detalhes do ponto selecionado
+    services/       comunicação com a API
+    routes.tsx      navegação com React Navigation
+  App.tsx           entrada do aplicativo Expo
+
+imagens/
+  capturas de tela das versões web e mobile
+```
